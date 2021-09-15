@@ -13,8 +13,9 @@ import (
 )
 
 func main() {
+
 	//define params
-	params := screenshot.CaptureScreenshotUnauthenticatedParams{}
+	params := screenshot.NewCaptureScreenshotUnauthenticatedParams()
 
 	//set url and token
 	params.URL = "https://webseite-herunterladen.de"
@@ -28,15 +29,15 @@ func main() {
 	}
 
 	//send request
-	response, err := client.Default.Screenshot.CaptureScreenshotUnauthenticated(&params, f)
+	response, err := client.Default.Screenshot.CaptureScreenshotUnauthenticated(params, f)
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
 
 	//check for response errors and capture points
-	if response.XREMAININGQUOTAPREPAID == 0 {
-		fmt.Println("Oh no! No prepaid quota left.")
+	if response.XREMAININGQUOTA + response.XREMAININGQUOTAPREPAID == 0 {
+		fmt.Println("Oh no! No quota left.")
 	}
 }
 
