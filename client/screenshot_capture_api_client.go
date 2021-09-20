@@ -43,10 +43,6 @@ func NewHTTPClientWithConfig(formats strfmt.Registry, cfg *TransportConfig) *Scr
 
 	// create transport and client
 	transport := httptransport.New(cfg.Host, cfg.BasePath, cfg.Schemes)
-	transport.Consumers["image/jpeg"] = runtime.ByteStreamConsumer()
-	transport.Consumers["image/png"] = runtime.ByteStreamConsumer()
-	transport.Consumers["image/webp"] = runtime.ByteStreamConsumer()
-	transport.Consumers["application/pdf"] = runtime.ByteStreamConsumer()
 	return New(transport, formats)
 }
 
