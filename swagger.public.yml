@@ -1,10 +1,10 @@
 swagger: "2.0"
 info:
-  description: "Webseite-Herunterladen.de Screenshot Capture is a very simple but powerful screenshot API that anyone can easily use to create pixel-perfect website screenshots. It always uses a recent version of Chrome to ensure that all modern web features are fully supported and rendering is exactly as your customers would expect."
+  description: "Screenshot-Capture-API.com Screenshot Capture is a very simple but powerful screenshot API that anyone can easily use to create pixel-perfect website screenshots. It always uses a recent version of Chrome to ensure that all modern web features are fully supported and rendering is exactly as your customers would expect."
   version: "1.0.0"
   title: "Screenshot Capture API"
 basePath: "/v1"
-host: api.webseite-herunterladen.de
+host: api.screenshot-capture-api.com
 tags:
   - name: "screenshot"
     description: "Screenshot Capture API"
@@ -25,7 +25,7 @@ paths:
   /capture/{token}:
     get:
       operationId: "captureScreenshotUnauthenticated"
-      description: "Webseite-Herunterladen.de Screenshot Capture is a very simple but powerful screenshot API that anyone can easily use to create pixel-perfect website screenshots. It always uses a recent version of Chrome to ensure that all modern web features are fully supported and rendering is exactly as your customers would expect."
+      description: "Screenshot-Capture-API.com Screenshot Capture is a very simple but powerful screenshot API that anyone can easily use to create pixel-perfect website screenshots. It always uses a recent version of Chrome to ensure that all modern web features are fully supported and rendering is exactly as your customers would expect."
       produces:
         - "application/json"
         - "application/pdf"
@@ -361,7 +361,7 @@ paths:
   /capture/{token}/{hash}:
     get:
       operationId: "captureScreenshotAuthenticated"
-      description: "Webseite-Herunterladen.de Screenshot Capture is a very simple but powerful screenshot API that anyone can easily use to create pixel-perfect website screenshots. It always uses a recent version of Chrome to ensure that all modern web features are fully supported and rendering is exactly as your customers would expect."
+      description: "Screenshot-Capture-API.com Screenshot Capture is a very simple but powerful screenshot API that anyone can easily use to create pixel-perfect website screenshots. It always uses a recent version of Chrome to ensure that all modern web features are fully supported and rendering is exactly as your customers would expect."
       produces:
         - "application/json"
         - "application/pdf"

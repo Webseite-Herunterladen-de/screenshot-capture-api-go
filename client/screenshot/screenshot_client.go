@@ -38,7 +38,7 @@ type ClientService interface {
 }
 
 /*
-  CaptureScreenshotAuthenticated Webseite-Herunterladen.de Screenshot Capture is a very simple but powerful screenshot API that anyone can easily use to create pixel-perfect website screenshots. It always uses a recent version of Chrome to ensure that all modern web features are fully supported and rendering is exactly as your customers would expect.
+  CaptureScreenshotAuthenticated Screenshot-Capture-API.com Screenshot Capture is a very simple but powerful screenshot API that anyone can easily use to create pixel-perfect website screenshots. It always uses a recent version of Chrome to ensure that all modern web features are fully supported and rendering is exactly as your customers would expect.
 */
 func (a *Client) CaptureScreenshotAuthenticated(params *CaptureScreenshotAuthenticatedParams, writer io.Writer, opts ...ClientOption) (*CaptureScreenshotAuthenticatedOK, error) {
 	// TODO: Validate the params before sending
@@ -75,7 +75,7 @@ func (a *Client) CaptureScreenshotAuthenticated(params *CaptureScreenshotAuthent
 }
 
 /*
-  CaptureScreenshotUnauthenticated Webseite-Herunterladen.de Screenshot Capture is a very simple but powerful screenshot API that anyone can easily use to create pixel-perfect website screenshots. It always uses a recent version of Chrome to ensure that all modern web features are fully supported and rendering is exactly as your customers would expect.
+  CaptureScreenshotUnauthenticated Screenshot-Capture-API.com Screenshot Capture is a very simple but powerful screenshot API that anyone can easily use to create pixel-perfect website screenshots. It always uses a recent version of Chrome to ensure that all modern web features are fully supported and rendering is exactly as your customers would expect.
 */
 func (a *Client) CaptureScreenshotUnauthenticated(params *CaptureScreenshotUnauthenticatedParams, writer io.Writer, opts ...ClientOption) (*CaptureScreenshotUnauthenticatedOK, error) {
 	// TODO: Validate the params before sending
